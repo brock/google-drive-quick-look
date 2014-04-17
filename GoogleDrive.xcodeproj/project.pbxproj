@@ -12,10 +12,24 @@
 		9415AA1B18FF707900D28A9F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415AA1A18FF707900D28A9F /* CoreServices.framework */; };
 		9415AA1D18FF707900D28A9F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415AA1C18FF707900D28A9F /* CoreFoundation.framework */; };
 		9415AA2318FF707900D28A9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9415AA2118FF707900D28A9F /* InfoPlist.strings */; };
-		9415AA2518FF707900D28A9F /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA2418FF707900D28A9F /* GenerateThumbnailForURL.c */; };
-		9415AA2718FF707900D28A9F /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA2618FF707900D28A9F /* GeneratePreviewForURL.c */; };
 		9415AA2918FF707900D28A9F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA2818FF707900D28A9F /* main.c */; };
+		9415AA3218FF718C00D28A9F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA3018FF718C00D28A9F /* GeneratePreviewForURL.m */; };
+		9415AA3318FF718C00D28A9F /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA3118FF718C00D28A9F /* GenerateThumbnailForURL.m */; };
+		9415AA3518FF75A200D28A9F /* GoogleDrive.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9415AA1318FF707900D28A9F /* GoogleDrive.qlgenerator */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9415AA3418FF757900D28A9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				9415AA3518FF75A200D28A9F /* GoogleDrive.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9415AA1318FF707900D28A9F /* GoogleDrive.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleDrive.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +39,10 @@
 		9415AA1C18FF707900D28A9F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9415AA2018FF707900D28A9F /* GoogleDrive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleDrive-Info.plist"; sourceTree = "<group>"; };
 		9415AA2218FF707900D28A9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9415AA2418FF707900D28A9F /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		9415AA2618FF707900D28A9F /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
 		9415AA2818FF707900D28A9F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		9415AA2A18FF707900D28A9F /* GoogleDrive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleDrive-Prefix.pch"; sourceTree = "<group>"; };
+		9415AA3018FF718C00D28A9F /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		9415AA3118FF718C00D28A9F /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +91,8 @@
 		9415AA1E18FF707900D28A9F /* GoogleDrive */ = {
 			isa = PBXGroup;
 			children = (
-				9415AA2418FF707900D28A9F /* GenerateThumbnailForURL.c */,
-				9415AA2618FF707900D28A9F /* GeneratePreviewForURL.c */,
+				9415AA3018FF718C00D28A9F /* GeneratePreviewForURL.m */,
+				9415AA3118FF718C00D28A9F /* GenerateThumbnailForURL.m */,
 				9415AA2818FF707900D28A9F /* main.c */,
 				9415AA1F18FF707900D28A9F /* Supporting Files */,
 			);
@@ -117,6 +131,7 @@
 				9415AA0F18FF707900D28A9F /* Headers */,
 				9415AA1018FF707900D28A9F /* Resources */,
 				9415AA1118FF707900D28A9F /* Rez */,
+				9415AA3418FF757900D28A9F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -179,8 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9415AA2518FF707900D28A9F /* GenerateThumbnailForURL.c in Sources */,
-				9415AA2718FF707900D28A9F /* GeneratePreviewForURL.c in Sources */,
+				9415AA3318FF718C00D28A9F /* GenerateThumbnailForURL.m in Sources */,
+				9415AA3218FF718C00D28A9F /* GeneratePreviewForURL.m in Sources */,
 				9415AA2918FF707900D28A9F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
