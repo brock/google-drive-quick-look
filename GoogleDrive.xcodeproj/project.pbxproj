@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9415AA1718FF707900D28A9F /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415AA1618FF707900D28A9F /* QuickLook.framework */; };
+		9415AA1918FF707900D28A9F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415AA1818FF707900D28A9F /* ApplicationServices.framework */; };
+		9415AA1B18FF707900D28A9F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415AA1A18FF707900D28A9F /* CoreServices.framework */; };
+		9415AA1D18FF707900D28A9F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415AA1C18FF707900D28A9F /* CoreFoundation.framework */; };
+		9415AA2318FF707900D28A9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9415AA2118FF707900D28A9F /* InfoPlist.strings */; };
+		9415AA2518FF707900D28A9F /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA2418FF707900D28A9F /* GenerateThumbnailForURL.c */; };
+		9415AA2718FF707900D28A9F /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA2618FF707900D28A9F /* GeneratePreviewForURL.c */; };
+		9415AA2918FF707900D28A9F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9415AA2818FF707900D28A9F /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9415AA1318FF707900D28A9F /* GoogleDrive.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleDrive.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		9415AA1618FF707900D28A9F /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		9415AA1818FF707900D28A9F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		9415AA1A18FF707900D28A9F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		9415AA1C18FF707900D28A9F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9415AA2018FF707900D28A9F /* GoogleDrive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleDrive-Info.plist"; sourceTree = "<group>"; };
+		9415AA2218FF707900D28A9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9415AA2418FF707900D28A9F /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		9415AA2618FF707900D28A9F /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		9415AA2818FF707900D28A9F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9415AA2A18FF707900D28A9F /* GoogleDrive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleDrive-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9415AA0E18FF707900D28A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9415AA1D18FF707900D28A9F /* CoreFoundation.framework in Frameworks */,
+				9415AA1718FF707900D28A9F /* QuickLook.framework in Frameworks */,
+				9415AA1B18FF707900D28A9F /* CoreServices.framework in Frameworks */,
+				9415AA1918FF707900D28A9F /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9415AA0818FF707900D28A9F = {
+			isa = PBXGroup;
+			children = (
+				9415AA1E18FF707900D28A9F /* GoogleDrive */,
+				9415AA1518FF707900D28A9F /* Frameworks */,
+				9415AA1418FF707900D28A9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9415AA1418FF707900D28A9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9415AA1318FF707900D28A9F /* GoogleDrive.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9415AA1518FF707900D28A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9415AA1618FF707900D28A9F /* QuickLook.framework */,
+				9415AA1818FF707900D28A9F /* ApplicationServices.framework */,
+				9415AA1A18FF707900D28A9F /* CoreServices.framework */,
+				9415AA1C18FF707900D28A9F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9415AA1E18FF707900D28A9F /* GoogleDrive */ = {
+			isa = PBXGroup;
+			children = (
+				9415AA2418FF707900D28A9F /* GenerateThumbnailForURL.c */,
+				9415AA2618FF707900D28A9F /* GeneratePreviewForURL.c */,
+				9415AA2818FF707900D28A9F /* main.c */,
+				9415AA1F18FF707900D28A9F /* Supporting Files */,
+			);
+			path = GoogleDrive;
+			sourceTree = "<group>";
+		};
+		9415AA1F18FF707900D28A9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9415AA2018FF707900D28A9F /* GoogleDrive-Info.plist */,
+				9415AA2118FF707900D28A9F /* InfoPlist.strings */,
+				9415AA2A18FF707900D28A9F /* GoogleDrive-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9415AA0F18FF707900D28A9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9415AA1218FF707900D28A9F /* GoogleDrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9415AA2D18FF707900D28A9F /* Build configuration list for PBXNativeTarget "GoogleDrive" */;
+			buildPhases = (
+				9415AA0D18FF707900D28A9F /* Sources */,
+				9415AA0E18FF707900D28A9F /* Frameworks */,
+				9415AA0F18FF707900D28A9F /* Headers */,
+				9415AA1018FF707900D28A9F /* Resources */,
+				9415AA1118FF707900D28A9F /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleDrive;
+			productName = GoogleDrive;
+			productReference = 9415AA1318FF707900D28A9F /* GoogleDrive.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9415AA0918FF707900D28A9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = 9415AA0C18FF707900D28A9F /* Build configuration list for PBXProject "GoogleDrive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9415AA0818FF707900D28A9F;
+			productRefGroup = 9415AA1418FF707900D28A9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9415AA1218FF707900D28A9F /* GoogleDrive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9415AA1018FF707900D28A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9415AA2318FF707900D28A9F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		9415AA1118FF707900D28A9F /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9415AA0D18FF707900D28A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9415AA2518FF707900D28A9F /* GenerateThumbnailForURL.c in Sources */,
+				9415AA2718FF707900D28A9F /* GeneratePreviewForURL.c in Sources */,
+				9415AA2918FF707900D28A9F /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9415AA2118FF707900D28A9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9415AA2218FF707900D28A9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9415AA2B18FF707900D28A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9415AA2C18FF707900D28A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9415AA2E18FF707900D28A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleDrive/GoogleDrive-Prefix.pch";
+				INFOPLIST_FILE = "GoogleDrive/GoogleDrive-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		9415AA2F18FF707900D28A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleDrive/GoogleDrive-Prefix.pch";
+				INFOPLIST_FILE = "GoogleDrive/GoogleDrive-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9415AA0C18FF707900D28A9F /* Build configuration list for PBXProject "GoogleDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9415AA2B18FF707900D28A9F /* Debug */,
+				9415AA2C18FF707900D28A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9415AA2D18FF707900D28A9F /* Build configuration list for PBXNativeTarget "GoogleDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9415AA2E18FF707900D28A9F /* Debug */,
+				9415AA2F18FF707900D28A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9415AA0918FF707900D28A9F /* Project object */;
+}
